@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myAPP">
   <head>
     <meta charset="utf-8">
     <title>fake douban</title>
     <script type="text/javascript" src="javascripts/angular.min.js"></script>
+    <script type="text/javascript" src="javascripts/underscore.min.js"></script>
     <script type="text/javascript" src="javascripts/data.js"></script>
     <script type="text/javascript" src="javascripts/app.js"></script>
+    <link rel="stylesheet" href="css/app.css" media="screen" title="no title" charset="utf-8">
   </head>
-  <body>
-
+  <body ng-controller="mainController">
+    <!-- <div class="book-list">
+      <div class="book" ng-repeat="book in books">
+          <div class="book-img-part">
+            <img src="{{book.images.small}}" alt="{{book.title}}" />
+          </div>
+          <div class="book-description-part">
+            <h3>{{book.title}}</h3>
+            <p class="authors"><span class="author" ng-repeat="author in book.author">{{author}}</span></p>
+            <p class="price"><span>{{book.price}}</span>起</p>
+            <p class="tags"><span class=tag ng-repeat="tag in book.tags">{{tag.name}}</span></p>
+          </div>
+      </div>
+    </div> -->
   </body>
 </html>

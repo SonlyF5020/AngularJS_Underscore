@@ -1,4 +1,8 @@
-(function(angular, data){
+(function(angular, data, _){
   // Your code should be here
-  
-})(angular, data);
+
+  var myAPP = angular.module('myAPP', []);
+  myAPP.controller('mainController', function($scope) {
+    $scope.books = data.books;
+  });
+})(angular, data, _);
